@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="utf-8" />
+  <title>TechGordo</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div id="container"></div>
+
+  <!-- three.js e loaders -->
+  <script src="https://cdn.jsdelivr.net/npm/three@0.127.0/build/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.127.0/examples/js/controls/OrbitControls.js"></script>
+
+    <!-- pós-processamento para borda brilhante -->
+  <script src="https://cdn.jsdelivr.net/npm/three@0.127.0/examples/js/shaders/CopyShader.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.127.0/examples/js/postprocessing/EffectComposer.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.127.0/examples/js/postprocessing/RenderPass.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.127.0/examples/js/postprocessing/OutlinePass.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.127.0/examples/js/postprocessing/ShaderPass.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.127.0/examples/js/shaders/FXAAShader.js"></script>
+
+
+  <!-- loaders -->
+  <script src="https://cdn.jsdelivr.net/npm/three@0.127.0/examples/js/loaders/MTLLoader.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.127.0/examples/js/loaders/OBJLoader.js"></script>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
