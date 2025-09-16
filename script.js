@@ -29,7 +29,7 @@ function startApp() {
     } else if ('outputEncoding' in renderizador && 'sRGBEncoding' in THREE) {
       renderizador.outputEncoding = THREE.sRGBEncoding;
     }
-  } catch (e) {}
+  } catch (e) { }
 
   const ControlsCtor = resolveCtor('OrbitControls');
   const controles = new ControlsCtor(camera, renderizador.domElement);
@@ -76,7 +76,7 @@ function startApp() {
     carregadorMtl.load(mtlPath, (materiais) => {
       materiais.preload();
       const carregadorObj = new OBJCtor();
-      try { carregadorObj.setMaterials(materiais); } catch (e) {}
+      try { carregadorObj.setMaterials(materiais); } catch (e) { }
 
       carregadorObj.load(objPath, (objeto) => {
         const caixa = new THREE.Box3().setFromObject(objeto);
